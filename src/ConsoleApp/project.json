@@ -1,0 +1,25 @@
+﻿{
+  "version": "1.0.0-*",
+
+  "buildOptions": {
+    "emitEntryPoint": true,
+    "xmlDoc": true,
+    "warningsAsErrors": true,
+    "additionalArguments": [ "/ruleset:../../_stylecop/StyleCopeRules.ruleset", "/additionalfile:../../_stylecop/stylecop.json" ]
+  },
+
+  "dependencies": {
+    "Microsoft.NETCore.App": {
+      "type": "platform",
+      "version": "1.0.1"
+    },
+    "ClassLibrary": "1.0.0",
+    "StyleCop.Analyzers": "1.0.0"
+  },
+
+  "frameworks": {
+    "netcoreapp1.0": {
+      "imports": "dotnet56"
+    }
+  }
+}
