@@ -19,7 +19,7 @@ namespace ClassLibrary
         /// <returns>A string contianng a name of this method, and when it was called</returns>
         public string GetTestStats()
         {
-            // Nihon - testing custom Style Cop dictionary
+            // InvalidNihonWord - testing custom Style Cop dictionary
             return $"{nameof(GetTestStats)} method was called at {DateTime.Now}";
         }
     }
