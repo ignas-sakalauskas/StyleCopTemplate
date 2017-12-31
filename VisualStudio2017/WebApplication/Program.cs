@@ -4,11 +4,11 @@
 // written consent from Test Company (www.yourcompany.com).
 // </copyright>
 
-namespace ConsoleApp
+namespace WebApplication
 {
-    using System;
     using System.Threading.Tasks;
-    using ClassLibrary;
+    using Microsoft.AspNetCore;
+    using Microsoft.AspNetCore.Hosting;
 
     /// <summary>
     /// The main program class
@@ -22,15 +22,17 @@ namespace ConsoleApp
         /// <returns>A <see cref="Task"/> representing the asynchronous operation.</returns>
         public static async Task Main(string[] args)
         {
-            var class1 = new Class1();
-
-            // Dummy await call.
-            await Task.Delay(1);
-
-            Console.WriteLine(class1.GetTestStats());
-
-            Console.WriteLine("Press any key to exit...");
-            Console.ReadKey();
+            await BuildWebHost(args).RunAsync();
         }
+
+        /// <summary>
+        /// Gets an instance of <see cref="IWebHost"/>
+        /// </summary>
+        /// <param name="args">Program arguments</param>
+        /// <returns><see cref="IWebHost"/></returns>
+        public static IWebHost BuildWebHost(string[] args) =>
+            WebHost.CreateDefaultBuilder(args)
+                .UseStartup<Startup>()
+                .Build();
     }
 }

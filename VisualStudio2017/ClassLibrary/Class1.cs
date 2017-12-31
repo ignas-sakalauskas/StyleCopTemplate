@@ -8,18 +8,12 @@ namespace ClassLibrary
 {
     using System;
 
-    /// <summary>
-    /// Simple test class
-    /// </summary>
+    /// <inheritdoc />
     public class Class1 : IClass1
     {
-        /// <summary>
-        /// Test method to return non-empty text string
-        /// </summary>
-        /// <returns>A string contianng a name of this method, and when it was called</returns>
+        /// <inheritdoc />
         public string GetTestStats()
         {
-            // InvalidNihonWord - testing custom Style Cop dictionary
             return $"{nameof(GetTestStats)} method was called at {DateTime.Now}";
         }
     }

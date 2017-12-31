@@ -1,14 +1,14 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp1.1</TargetFramework>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
     <TreatSpecificWarningsAsErrors />
     <NoWarn>1701;1702;1705</NoWarn>
-    <DocumentationFile>bin\Debug\netcoreapp1.1\ClassLibrary.xml</DocumentationFile>
+    <DocumentationFile>bin\Debug\netcoreapp2.0\ClassLibrary.xml</DocumentationFile>
   </PropertyGroup>
 
   <PropertyGroup>
