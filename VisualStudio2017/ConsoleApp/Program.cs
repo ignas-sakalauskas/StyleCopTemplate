@@ -11,14 +11,14 @@ namespace ConsoleApp
     using ClassLibrary;
 
     /// <summary>
-    /// The main program class
+    /// The main program class.
     /// </summary>
     public class Program
     {
         /// <summary>
-        /// Program entry point
+        /// Program entry point.
         /// </summary>
-        /// <param name="args">Program arguments</param>
+        /// <param name="args">Program arguments.</param>
         /// <returns>A <see cref="Task"/> representing the asynchronous operation.</returns>
         public static async Task Main(string[] args)
         {

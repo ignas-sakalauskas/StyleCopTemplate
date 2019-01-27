@@ -7,14 +7,14 @@
 namespace ClassLibrary
 {
     /// <summary>
-    /// Simple test class
+    /// Simple test class.
     /// </summary>
     public interface IClass1
     {
         /// <summary>
-        /// Test method to return non-empty text string
+        /// Test method to return non-empty text string.
         /// </summary>
-        /// <returns>A string contianng a name of this method, and when it was called</returns>
+        /// <returns>A string contianng a name of this method, and when it was called.</returns>
         string GetTestStats();
     }
 }

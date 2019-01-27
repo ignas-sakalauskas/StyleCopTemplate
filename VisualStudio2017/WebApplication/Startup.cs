@@ -12,28 +12,28 @@ namespace WebApplication
     using Microsoft.Extensions.DependencyInjection;
 
     /// <summary>
-    /// Startup class
+    /// Startup class.
     /// </summary>
     public class Startup
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="Startup"/> class.
         /// </summary>
-        /// <param name="configuration">An instance of <see cref="IConfiguration"/></param>
+        /// <param name="configuration">An instance of <see cref="IConfiguration"/>.</param>
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
         }
 
         /// <summary>
-        /// Gets an instance of <see cref="IConfiguration"/>
+        /// Gets an instance of <see cref="IConfiguration"/>.
         /// </summary>
         public IConfiguration Configuration { get; }
 
         /// <summary>
         /// This method gets called by the runtime. Use this method to add services to the container.
         /// </summary>
-        /// <param name="services">An instance of <see cref="IServiceCollection"/></param>
+        /// <param name="services">An instance of <see cref="IServiceCollection"/>.</param>
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
@@ -42,8 +42,8 @@ namespace WebApplication
         /// <summary>
         /// This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         /// </summary>
-        /// <param name="app">An instance of <see cref="IApplicationBuilder"/></param>
-        /// <param name="env">An instance of <see cref="IHostingEnvironment"/></param>
+        /// <param name="app">An instance of <see cref="IApplicationBuilder"/>.</param>
+        /// <param name="env">An instance of <see cref="IHostingEnvironment"/>.</param>
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
             if (env.IsDevelopment())

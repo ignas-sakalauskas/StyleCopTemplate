@@ -10,26 +10,26 @@ namespace WebApplication.Controllers
     using Microsoft.AspNetCore.Mvc;
 
     /// <summary>
-    /// Sample controller
+    /// Sample controller.
     /// </summary>
     [Route("api/[controller]")]
     public class ValuesController : Controller
     {
         /// <summary>
-        /// GET api/values
+        /// GET api/values.
         /// </summary>
-        /// <returns>List of string values</returns>
+        /// <returns>List of string values.</returns>
         [HttpGet]
         public IEnumerable<string> Get()
         {
-            return new string[] { "value1", "value2" };
+            return new[] { "value1", "value2" };
         }
 
         /// <summary>
-        /// GET api/values/5
+        /// GET api/values/5.
         /// </summary>
-        /// <param name="id">Integer ID</param>
-        /// <returns>String value</returns>
+        /// <param name="id">Integer ID.</param>
+        /// <returns>String value.</returns>
         [HttpGet("{id}")]
         public string Get(int id)
         {
@@ -37,28 +37,28 @@ namespace WebApplication.Controllers
         }
 
         /// <summary>
-        /// POST api/values
+        /// POST api/values.
         /// </summary>
-        /// <param name="value">String value</param>
+        /// <param name="value">String value.</param>
         [HttpPost]
         public void Post([FromBody]string value)
         {
         }
 
         /// <summary>
-        /// PUT api/values/5
+        /// PUT api/values/5.
         /// </summary>
-        /// <param name="id">Integer ID</param>
-        /// <param name="value">String value</param>
+        /// <param name="id">Integer ID.</param>
+        /// <param name="value">String value.</param>
         [HttpPut("{id}")]
         public void Put(int id, [FromBody]string value)
         {
         }
 
         /// <summary>
-        /// DELETE api/values/5
+        /// DELETE api/values/5.
         /// </summary>
-        /// <param name="id">Integer ID</param>
+        /// <param name="id">Integer ID.</param>
         [HttpDelete("{id}")]
         public void Delete(int id)
         {

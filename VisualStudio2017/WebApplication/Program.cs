@@ -11,14 +11,14 @@ namespace WebApplication
     using Microsoft.AspNetCore.Hosting;
 
     /// <summary>
-    /// The main program class
+    /// The main program class.
     /// </summary>
     public class Program
     {
         /// <summary>
-        /// Program entry point
+        /// Program entry point.
         /// </summary>
-        /// <param name="args">Program arguments</param>
+        /// <param name="args">Program arguments.</param>
         /// <returns>A <see cref="Task"/> representing the asynchronous operation.</returns>
         public static async Task Main(string[] args)
         {
@@ -26,10 +26,10 @@ namespace WebApplication
         }
 
         /// <summary>
-        /// Gets an instance of <see cref="IWebHost"/>
+        /// Gets an instance of <see cref="IWebHost"/>.
         /// </summary>
-        /// <param name="args">Program arguments</param>
-        /// <returns><see cref="IWebHost"/></returns>
+        /// <param name="args">Program arguments.</param>
+        /// <returns><see cref="IWebHost"/>.</returns>
         public static IWebHost BuildWebHost(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
                 .UseStartup<Startup>()
